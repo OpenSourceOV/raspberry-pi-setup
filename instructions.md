@@ -55,15 +55,11 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
 
 3. Enable the Camera
 
-    From the start menu (raspberry icon top left of the screen) choose Settings then Raspiconfig
-
-    From the list of options choose click the radio to enable the Camera module.
+    From the start menu (raspberry icon top left of the screen) select Preferences then Raspberry Pi Configuration. Click the interfaces tab and click 'Enabled' next to Camera to enable the camera. Restart the Pi.
 
     ![](./images/open_config.jpg)
     ![](./images/config_gui.jpg)
     
-    Restart the Pi.
-
 
 4. Install python modules required for the image capture script (cavicapture).
 
