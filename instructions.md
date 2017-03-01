@@ -26,11 +26,11 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
 
 3. Insert the USB keyboard and mouse into the USB ports on the Pi.
 
-4. Inser the HDMI video cable into the HDMI port on the Pi and a monitor/TV HDMI/DVI-D port (adapter may be required).
+4. Insert the HDMI video cable into the HDMI port on the Pi and a monitor/TV HDMI/DVI-D port (adapter may be required).
 
 5. Insert the micro USB cable into the micro USB port on the Pi and into the computer/laptop micro USB port or wall socket USB power supply.
 
-6. Once the Pi has loaded it should be showing a NOOBS installation screen and asking you to choose an operating system to install on the Pi. Choose the Raspbian operating system and follow steps to complete installation.
+6. Once the Pi has loaded and showing a NOOBS installation screen choose the Raspbian operating system and follow steps to complete installation.
 
     ![](./images/noobs.png)
 
@@ -49,13 +49,21 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
     sudo apg-get dist-upgrade
     ```
 
+    ![](./images/terminal_shortcut.jpg)
+    ![](./images/terminal_update_cmd.jpg)
+
+
 3. Enable the Camera
 
     From the start menu (raspberry icon top left of the screen) choose Settings then Raspiconfig
 
     From the list of options choose click the radio to enable the Camera module.
 
+    ![](./images/open_config.jpg)
+    ![](./images/config_gui.jpg)
+    
     Restart the Pi.
+
 
 4. Install python modules required for the image capture script (cavicapture).
 
@@ -75,7 +83,12 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
     sudo raspi-config
     ```
 
-    Using the cursor keys move down to "Advanced Options", hit enter then down to "Memory Split" and change the value to 256.
+    Using the cursor keys move down to "Advanced Options", press enter then move down to "Memory Split", press enter again and change the value to 256. Press down to go to Ok and press enter. On the main menu press right to get to the Finish option and press enter to exit. Restart the Pi.
+
+    ![](./images/config_main_menu.jpg)
+    ![](./images/config_advanced_options.jpg)
+    ![](./images/config_memory_split.jpg)
+
 
 6. Download the image capture script (cavicapture)
 
@@ -89,6 +102,9 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
     source ~/.bash_profile
     ```
 
+    ![](./images/download_cavicapture.jpg)
+
 7. Done! The Pi is now ready to start capturing images.
+
 
 
