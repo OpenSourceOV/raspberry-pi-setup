@@ -41,6 +41,13 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
     Connecting the Pi v3 to the internet is much easier than previous models. You can connect the Pi to an internet-accessible network by plugging an ethernet cable into the ethernet port on the Pi and then directly into a network router. Alternatively the model 3 Raspberry Pi has Wi-Fi (enabled by default) and can be connected to any wireless network that broadcasts an SSID. At the top right of the desktop click the Wi-Fi icon on the task bar and you will see a list of available wireless networks. Click a network to join, providing a network key if required.
 
     ![](./images/task_bar_wifi.jpg)
+    ![](./images/wireless_network_list.jpg)
+
+    **Problems connecting to a wireless network?**
+
+    You may find that the Pi won't connect to the wireless or wired network of your organsation e.g. university. This is likely because of security.
+
+    Most high-end smartphones have wireless hotspot capability. This allows nearby devices to use their internet connection over a temporary wireless 'hotspot' network. Usually the Pi has no problems connecting to these hotspots and may be a quick fix to get the Pi setup and running. Hotspots will be visible in the wireless network list.
 
 2. Upgrade to the latest version of the operating system and install any updates.
 
