@@ -97,8 +97,6 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
     source ~/.profile
     ```
 
-    ![](./images/download_cavicapture.jpg)
-
 7. Done! The Pi is now ready to start capturing images.
 
 
