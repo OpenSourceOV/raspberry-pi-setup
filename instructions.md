@@ -70,17 +70,7 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
     ![](./images/config_gui.jpg)
     
 
-4. Install python modules required for the image capture script (cavicapture).
-
-    Open the terminal and enter the following commands, line by line as before, answering Yes to any questions.
-
-    ```
-    sudo apt-get install python-scipy
-    sudo apt-get install python-opencv
-    sudo apt-get install python-matplotlib
-    ```
-
-5. Increase the GPU (Graphics Processing Unit) memory.
+4. Increase the GPU (Graphics Processing Unit) memory.
 
     In the terminal enter the following command:
 
@@ -95,16 +85,16 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
     ![](./images/config_memory_split.jpg)
 
 
-6. Download the image capture script (cavicapture)
+5. Download the image capture script (cavicapture)
 
     In the terminal enter the following commands, line by line:
 
     ```
     cd ~/
-    git clone https://github.com/OpenSourceOV/cavicapture.git
+    git clone https://github.com/OpenSourceOV/cavicapture.git --depth 1
     sudo chmod +x cavicapture/cavicapture.py
-    echo 'export PATH=~/cavicapture:$PATH' >>~/.bash_profile
-    source ~/.bash_profile
+    echo 'export PATH=~/cavicapture:$PATH' >>~/.profile
+    source ~/.profile
     ```
 
     ![](./images/download_cavicapture.jpg)
