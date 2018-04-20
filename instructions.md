@@ -55,7 +55,7 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
 
     ```
     sudo apt-get update
-    sudo apg-get dist-upgrade
+    sudo apt-get dist-upgrade
     ```
 
     ![](./images/terminal_shortcut.jpg)
