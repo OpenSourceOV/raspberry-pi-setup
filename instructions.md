@@ -4,7 +4,7 @@
 
 Quantity | Part | Additional information
 ---------|------|---------
-1|Raspberry Pi 3 Model B|For more information see [http://raspberrypi.org](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
+1|Raspberry Pi 3 (Model B or B+)|
 1|USB Keyboard|
 1|USB Mouse|
 1|HDMI video cable|
@@ -55,7 +55,7 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
 
     ```
     sudo apt-get update
-    sudo apg-get dist-upgrade
+    sudo apt-get dist-upgrade
     ```
 
     ![](./images/terminal_shortcut.jpg)
@@ -70,15 +70,8 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
     ![](./images/config_gui.jpg)
     
 
-4. Install python modules required for the image capture script (cavicapture).
-
-    Open the terminal and enter the following commands, line by line as before, answering Yes to any questions.
-
-    ```
-    sudo apt-get install python-opencv
-    ```
-
 5. Increase the GPU (Graphics Processing Unit) memory.
+
 
     In the terminal enter the following command:
 
@@ -93,6 +86,7 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
     ![](./images/config_memory_split.jpg)
 
 6. See the [OpenSourceOV/cavicapture](https://github.com/OpenSourceOV/cavicapture.git) and [OpenSourceOV/caviconsole](https://github.com/OpenSourceOV/caviconsole.git) to install the cavicapture script and caviconsole GUI.
+
 
 
 
