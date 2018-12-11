@@ -20,7 +20,7 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
 
 ### Install the Raspberry Pi operating system on the microSD card
 
-1.  Follow the instructions at [http://raspberrypi.org/documentation/installation/noobs.md](https://www.raspberrypi.org/documentation/installation/noobs.md) to install NOOBS (New Out Of Box Software) on the microSD card. 
+1.  Follow the instructions at [http://raspberrypi.org/documentation/installation/noobs.md](https://www.raspberrypi.org/documentation/installation/noobs.md) to install NOOBS (New Out Of Box Software) on the microSD card. Use at least v4.4 of the Raspbian operating system.
 
 2. Insert the microSD card into the microSD card slot on the Pi.
 
@@ -38,7 +38,7 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
 
 1. Connect the Pi to the internet.
 
-    Connecting the Pi v3 to the internet is much easier than previous models. You can connect the Pi to an internet-accessible network by plugging an ethernet cable into the ethernet port on the Pi and then directly into a network router. Alternatively the model 3 Raspberry Pi has Wi-Fi (enabled by default) and can be connected to any wireless network that broadcasts an SSID. At the top right of the desktop click the Wi-Fi icon on the task bar and you will see a list of available wireless networks. Click a network to join, providing a network key if required.
+    Most Raspberry Pis now have WiFi enabled by default. At the top right of the desktop click the Wi-Fi icon on the task bar and you will see a list of available wireless networks. Click a network to join, providing a network key if required. 
 
     ![](./images/task_bar_wifi.jpg)
     ![](./images/wireless_network_list.jpg)
@@ -75,9 +75,7 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
     Open the terminal and enter the following commands, line by line as before, answering Yes to any questions.
 
     ```
-    sudo apt-get install python-scipy
     sudo apt-get install python-opencv
-    sudo apt-get install python-matplotlib
     ```
 
 5. Increase the GPU (Graphics Processing Unit) memory.
@@ -94,22 +92,7 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
     ![](./images/config_advanced_options.jpg)
     ![](./images/config_memory_split.jpg)
 
-
-6. Download the image capture script (cavicapture)
-
-    In the terminal enter the following commands, line by line:
-
-    ```
-    cd ~/
-    git clone https://github.com/OpenSourceOV/cavicapture.git
-    sudo chmod +x cavicapture/cavicapture.py
-    echo 'export PATH=~/cavicapture:$PATH' >>~/.bash_profile
-    source ~/.bash_profile
-    ```
-
-    ![](./images/download_cavicapture.jpg)
-
-7. Done! The Pi is now ready to start capturing images.
+6. See the [OpenSourceOV/cavicapture](https://github.com/OpenSourceOV/cavicapture.git) and [OpenSourceOV/caviconsole](https://github.com/OpenSourceOV/caviconsole.git) to install the cavicapture script and caviconsole GUI.
 
 
 
