@@ -20,7 +20,7 @@ These instructions assume you are using a new and unused Pi and a blank microSD 
 
 ### Install the Raspberry Pi operating system on the microSD card
 
-1.  Follow the instructions at [http://raspberrypi.org/documentation/installation/noobs.md](https://www.raspberrypi.org/documentation/installation/noobs.md) to install NOOBS (New Out Of Box Software) on the microSD card. Use at least v4.4 of the Raspbian operating system.
+1.  Follow the instructions at [http://raspberrypi.org/documentation/installation/noobs.md](https://www.raspberrypi.org/documentation/installation/noobs.md) to install NOOBS (New Out Of Box Software) on the microSD card. Use at least v4.14 of the Raspbian operating system.
 
 2. Insert the microSD card into the microSD card slot on the Pi.
 
